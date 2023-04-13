@@ -6,9 +6,10 @@ import { Complaint } from './entities';
 export class ComplaintResolver {
     constructor(private readonly complaintService: ComplaintService) {}
 
-    @Query(() => [Complaint], {name: 'complaints'})
+    @Query(() => String, {name: 'complaints'})
     async findAll() {
-        const complaints = await this.complaintService.findAllSimple();
-        return complaints
+        return `test`;
+        // const complaints = await this.complaintService.findAllSimple();
+        // return complaints
     }
 }

@@ -3,7 +3,7 @@ import { ComplaintImage } from ".";
 import { User } from "../../auth/entities/user.entity";
 import { Field, ObjectType } from "@nestjs/graphql";
 
-@ObjectType()
+// @ObjectType()
 @Entity()
 export class Complaint {
     @Field(() => String)
